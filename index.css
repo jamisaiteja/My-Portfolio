@@ -108,31 +108,29 @@
     
 }
 
-section{
-    height:100vh;
-}
+
 .about-section {
-    background-color: white;
+    background-color: rgb(252, 248, 248);
 }
 .about-section-img {
     width: 270px;
 }
 
-.about-section-heading {
-    color: #183b56;
+.section-heading {
+    color: #141414;
     font-family: "Roboto";
     font-size: 28px;
     font-weight: 700;
 }
 
 .about-section-description {
-    color: #5a7184;
+    color: #979fa5;
     font-family: "Roboto";
     font-size: 16px;
 }
 
 .about-section-para {
-    color: #5a7184;
+    color: #6e6f70;
     font-family: "Roboto";
     font-size: 24px;
 }
