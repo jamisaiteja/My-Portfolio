@@ -12,33 +12,37 @@
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="./css/all.css">
     <link rel="stylesheet" href="./css/all.min.css">
+    <!-- aos library link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img
-                    src="https://yt3.ggpht.com/a/AATXAJxEttdyI0YPeZ0L9i7w46BnvWZB-yWOX_QBbA=s900-c-k-c0xffffffff-no-rj-mo"
-                    class="logo"
-                />
-            </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="text-center">Menu <i class="fas fa-bars ms-1"></i></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav ml-lg-auto  text-uppercase">
-                <a class="homeSection" id="navItem1" href="#homeSection">
-                    <i class="fas fa-home-alt"></i> Home
-                <span class="sr-only">(current)</span>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img
+                        src="https://yt3.ggpht.com/a/AATXAJxEttdyI0YPeZ0L9i7w46BnvWZB-yWOX_QBbA=s900-c-k-c0xffffffff-no-rj-mo"
+                        class="logo"
+                    />
                 </a>
-                <a class="aboutSection" href="#aboutSection" id="navItem2"><i class="fa-solid fa-user"></i> About</a>
-                <a class="resumeSection" href="#resumeSection" id="navItem3"><i class="fa-solid fa-file"></i> Resume</a>
-                <a class="portfolioSection" href="#portfolioSection" id="navItem4"><i class="fa-solid fa-sliders"></i> Portfolio</a>
-                <a class="contactSection" href="#contactSection" id="navItem5"><i class="fa-solid fa-envelope"></i> Contact</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="text-center">Menu <i class="fas fa-bars ms-1"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-lg-auto  text-uppercase">
+                    <a class="homeSection" id="navItem1" href="#homeSection">
+                        <i class="fas fa-home-alt"></i> Home
+                    <span class="sr-only">(current)</span>
+                    </a>
+                    <a class="aboutSection" href="#aboutSection" id="navItem2"><i class="fa-solid fa-user"></i> About</a>
+                    <a class="resumeSection" href="#resumeSection" id="navItem3"><i class="fa-solid fa-file"></i> Resume</a>
+                    <a class="portfolioSection" href="#portfolioSection" id="navItem4"><i class="fa-solid fa-sliders"></i> Portfolio</a>
+                    <a class="contactSection" href="#contactSection" id="navItem5"><i class="fa-solid fa-envelope"></i> Contact</a>
+                </div>
             </div>
-        </div>
-        </div>
-    </nav> 
+            </div>
+        </nav> 
+    </header>
     <section class="Home-section d-flex justify-content-center flex-column text-md-dark text-lg-light" id="homeSection">
         <div class="text-center">
             <p class="Home-caption mb-0 font-weight-bold"><span>Hello,I'm</span><br/><span class="Home-heading">Jami Sai Teja</span></p>
@@ -50,7 +54,7 @@
     <section class="about-section pt-5 pb-5" id="aboutSection">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-5 order-1 order-md-2 mb-2">
+                <div class="col-12 col-md-5 order-1 order-md-2 mb-2" data-aos="fade-left">
                     <div class="text-center">
                         <img
                         src="./assests/aboutMe.png"
@@ -58,11 +62,11 @@
                         />
                     </div>
                 </div>
-                <div class="col-12 col-md-7 order-2 order-md-1 m-auto">
+                <div class="col-12 col-md-7 order-2 order-md-1 m-auto" data-aos="fade-right">
                     <h1 class="section-heading mt-3">
                         About Me
                     </h1>
-                    <h3 class="about-section-para">I am a Front End Developer from Andhra Pradesh,India.</h3>
+                    <h3 class="about-section-para">I am Jami Saiteja, 23 Year old Front End Developer From Andhra Pradesh, India.</h3>
                     <p class="about-section-description">
                         I am interested in IT and everything in its orbit. I've recently developed an interest in web development,
                         such as creating websites and applications.I want to gain more experience in this field. 
@@ -81,17 +85,137 @@
 
     <section class="resume-section pt-5 pb-5" id="resumeSection">
         <div class="container">
+            <div class="section-title">
+                <h2 class="section-heading mt-3">Resume</h2>
+                <p class="resume-description">In this Section, you will know my Education details, Work Experience and My Skills to represent my Expertise.</p>
+            </div>
             <div class="row">
-                <h1 class="section-heading mt-3">Resume</h1>
+                <div class="col-lg-6" data-aos="fade-up">
+                    <h3 class="resume-title">Summary</h3>
+                    <div class="resume-item pb-0">
+                        <h4>Jami Saiteja</h4>
+                        <p><em>Front End Developer</em></p>
+                        <ul>
+                            <li><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;&nbsp;Andhra Pradesh, India</li>
+                            <li><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;&nbsp;9705714345</li>
+                            <li><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;&nbsp;jamisaiteja666@gmail.com</li>
+                        </ul>
+                    </div>
+        
+                    <h3 class="resume-title">Education</h3>
+                    <div class="resume-item">
+                        <h4>Bachelor of Technology in Electronics and Communication Engineering</h4>
+                        <h5>2017 - 2021</h5>
+                        <p><em>SRM Institute of Technology, Chennai, India</em></p>
+                        <p>B.Tech in Electronics and Communication Engineering with an aggregate of <b>87</b> percentage.</p>
+                    </div>
+                    <div class="resume-item">
+                        <h4>Intermediate</h4>
+                        <h5>2015 - 2017</h5>
+                        <p><em>Sri Chaitanya Junior College, Vishakapatnam, India</em></p>
+                        <p>Passed with an aggregate of <b>94.5</b> percentage.</p>
+                    </div>
+                    <div class="resume-item">
+                        <h4>Secondary School of Certo</h4>
+                        <h5>2015</h5>
+                        <p><em>Rishi Vidyalaya Gurukulam, Vishakapatnam, Inida</em></p>
+                        <p>Passed with an aggregate of <b>80</b> percentage.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+                    <h3 class="resume-title">Work Experience</h3>
+                    <div class="resume-item mt-2">
+                        <h4>Programmer Analyst</h4>
+                        <h5>AUG 2021 - Present</h5>
+                        <p><em>Cognizant Technology Solutions, Hyderabad, India</em></p>
+                        <ul>
+                            <li>Performed regression and system-level testing to verify software quality and function before it was released.</li>
+                            <li>Involved in QA support and participated in daily Stand-up meetings to discuss impediments, clarifications, and status </li>
+                            <li>Used Jira to track, assign and manage work within the team.</li>
+                        </ul>
+                    </div>
+                    <!-- <div class="resume-item">
+                        <h4>Graphic design specialist</h4>
+                        <h5>2017 - 2018</h5>
+                        <p><em>Stepping Stone Advertising, New York, NY</em></p>
+                        <ul>
+                            <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
+                            <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
+                            <li>Recommended and consulted with clients on the most appropriate graphic design</li>
+                            <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
+                        </ul>
+                    </div> -->
+                    <h3 class="resume-title">Skills</h3>
+                    <div class="resume-item">
+                        <div class="skill_main" data-aos="fade-left">
+                            <div class="skill-bar mt-2">
+                                <div class="info">
+                                    <p>HTML 5</p>
+                                    <P>90%</P>
+                                </div>
+                                <div class="bar">
+                                    <span class="html"></span>
+                                </div>
+                            </div>
+                            <div class="skill-bar mt-2">
+                                <div class="info">
+                                    <p>CSS 3</p>
+                                    <P>85%</P>
+                                </div>
+                                <div class="bar">
+                                    <span class="css"></span>
+                                </div>
+                            </div>
+                            <div class="skill-bar mt-2">
+                                <div class="info">
+                                    <p>BOOTSTRAP</p>
+                                    <P>80%</P>
+                                </div>
+                                <div class="bar">
+                                    <span class="bootstrap"></span>
+                                </div>
+                            </div>
+                            <div class="skill-bar mt-2">
+                                <div class="info">
+                                    <p>JAVASCRIPT</p>
+                                    <P>80%</P>
+                                </div>
+                                <div class="bar">
+                                    <span class="js"></span>
+                                </div>
+                            </div>
+                            <div class="skill-bar mt-2">
+                                <div class="info">
+                                    <p>SQL</p>
+                                    <P>80%</P>
+                                </div>
+                                <div class="bar">
+                                    <span class="sql"></span>
+                                </div>
+                            </div>
+                            <div class="skill-bar mt-2">
+                                <div class="info">
+                                    <p>PYTHON</p>
+                                    <P>70%</P>
+                                </div>
+                                <div class="bar">
+                                    <span class="python"></span>
+                                </div>
+                            </div>
+                    </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <section class="portfolio-section pt-5 pb-5" id="portfolioSection">
         <div class="container">
-            <div class="row">
-                <h1>Portfolio</h1>
+            <div class="section-title">
+                <h2 class="section-heading mt-3">Portfolio</h2>
+                <p class="resume-description">Here you can find My Projects that represent my Expertise.</p>
             </div>
+
         </div>
     </section>
 
@@ -103,5 +227,10 @@
         </div>
     </section>
     <script src="./index.js"></script>
+    <!-- our aos data -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

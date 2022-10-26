@@ -1,5 +1,5 @@
-// const a = window.location.hash;
-// console.log(a);
+// // const a = window.location.hash;
+// // console.log(a);
 
 const sections = document.querySelectorAll("section");
 const nava = document.querySelectorAll("nav .collapse div a");
