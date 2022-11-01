@@ -404,15 +404,6 @@ Contact
     background-color: rgb(252, 248, 248);
 }
 
-.box{
-    width:100%;
-    padding: 40px;
-    background-color: rgba(251, 251, 251, 0.8);
-    box-sizing: border-box;
-    box-shadow: 0 15px 25px rgba(120, 118, 118, 0.5);
-    border-radius: 10px;
-}
-
 .contact-section .info{
     width:100%;
     padding: 40px;
@@ -469,6 +460,14 @@ Contact
     font-weight: 400;
 }
 
+.box{
+    width:100%;
+    padding: 40px;
+    background-color: rgba(251, 251, 251, 0.8);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(120, 118, 118, 0.5);
+    border-radius: 10px;
+}
 
 
 .box h2{
@@ -526,7 +525,7 @@ Contact
     cursor: pointer;
     padding: 10px 20px;
     font-weight: bold;
-    margin: 0 auto;
+    margin: 15px auto;
     display: block;
     width: 130px;
     font-size: 18px;
