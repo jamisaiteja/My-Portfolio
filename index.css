@@ -344,6 +344,9 @@ Portfolio
 
 .project-image {
     border-radius: 16px;
+    /* height: 35vh; */
+    /* width:262px;
+    height:284px; */
 }
 
 .project-title {
@@ -508,4 +511,25 @@ Contact
 #sub:hover{
     background-color: #000000;
     color: #a9acae;
+}
+
+/* ------------
+footer
+------------ */
+
+
+.footer {
+    background-color: #001c32;
+}
+
+.description{
+    color: #5a7184;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.copy-icon {
+    color: #5a7184;
+    font-size: 22px;
 }
