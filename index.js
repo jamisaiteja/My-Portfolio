@@ -41,7 +41,7 @@ function sendEmail(){
         Subject : "Portfolio contact data",
         Body : body
     }).then(
-        message => alert("Message Sent Succesfully")
+        message => alert(message)
     );
 }
 
