@@ -16,10 +16,6 @@
     font-family:italic;
 }
 
-.nav{
-    position:fixed;
-    background-color: #000000;
-}
 
 #navItem1,#navItem2,#navItem3,#navItem4,#navItem5{
     color: #f4f4f5;
@@ -39,17 +35,7 @@
 .active {
     background-color: #88878a;
     border-radius: 8px;
-    /* padding: 6px; */
 }
-
-/* header::before{
-    content:"";
-    background-image: url("./assests/backgroundHome.jpg");
-    height: 90vh;
-    width:100vw;
-    position:absolute;
-    z-index: -1;
-} */
 
 .Home-section {
     background-image: url("./assests/backgroundHome.jpg");
@@ -91,7 +77,7 @@
     #navItem1,#navItem2,#navItem3,#navItem4,#navItem5{
         text-align: center;
     }
-    
+
     .Home-heading {
         color: rgb(17, 16, 16);
         font-size: 36px;
@@ -115,15 +101,17 @@
         font-family: "Roboto";
         font-weight:600;
         font-size:12px;
-        padding:10px;
-        margin:5px;
     }
     
 }
 
+/* --------------
+aboutsection
+=--------------- */
 
 .about-section {
     background-color: rgb(252, 248, 248);
+    width: 100%;
 }
 .about-section-img {
     width: 270px;
@@ -192,9 +180,10 @@ Resume
     margin-top: 20px;
     margin-bottom: 20px;
     color: #050d18;
+    width: 100%;
 }
 
-.resume-item {
+.resume-item,.skill_main{
     padding: 0 0 20px 20px;
     margin-top: -2px;
     border-left: 2px solid #131314;
@@ -209,6 +198,7 @@ Resume
     font-family: "Poppins", sans-serif;
     color: #050d18;
     margin-bottom: 10px;
+    margin-left:5px;
 }
 
 .resume-item h5 {
@@ -229,11 +219,11 @@ Resume
     list-style-type: none;
 }
 
-.resume-item:last-child {
+/* .resume-item:last-child {
     padding-bottom: 0;
-}
+} */
 
-.resume-item::before {
+.resume-item::before, .skill_main:before{
     content: "";
     position: absolute;
     width: 16px;
@@ -249,6 +239,7 @@ Resume
     margin-top: 5px;
     padding: 10px;
 }
+
 
 .info{
     display: flex;
@@ -341,28 +332,6 @@ Resume
         width: 70%;
     }
 }
-.bar .express{
-    width: 65%;
-    animation: express 2s;
-}
-@keyframes express {
-    0%{
-        width: 0%;
-    }100%{
-        width: 65%;
-    }
-}
-.bar .mongo{
-    width: 60%;
-    animation: mongo 2s;
-}
-@keyframes mongo {
-    0%{
-        width: 0%;
-    }100%{
-        width: 60%;
-    }
-}
 
 /* ---------------------
 Portfolio
@@ -404,7 +373,7 @@ Contact
     background-color: rgb(252, 248, 248);
 }
 
-.contact-section .info{
+.contact-section .infor{
     width:100%;
     padding: 40px;
     background-color: rgba(251, 251, 251, 0.8);
@@ -413,7 +382,7 @@ Contact
     border-radius: 10px;
 }
 
-.contact-section .info i {
+.contact-section .infor i {
     font-size: 20px;
     color: #000000;
     float: left;
@@ -427,7 +396,7 @@ Contact
     transition: all 0.3s ease-in-out;
 }
 
-.contact-section .info h4 {
+.contact-section .infor h4 {
     padding: 0 0 0 60px;
     font-size: 22px;
     font-weight: 600;
@@ -435,20 +404,20 @@ Contact
     color: #050d18;
 }
 
-.contact-section .info p {
+.contact-section .infor p {
     padding: 0 0 10px 60px;
     margin-bottom: 20px;
     font-size: 14px;
     color: #173b6c;
 }
 
-.contact-section .info .email p {
+.contact-section .infor .email p {
     padding-top: 5px;
 }
 
-.contact-section .info .email:hover i,
-.contact-section .info .address:hover i,
-.contact-section .info .phone:hover i {
+.contact-section .infor .email:hover i,
+.contact-section .infor .address:hover i,
+.contact-section .infor .phone:hover i {
     background-color: #000000;
     color: #a9acae;
 }
@@ -535,4 +504,3 @@ Contact
     background-color: #000000;
     color: #a9acae;
 }
-
