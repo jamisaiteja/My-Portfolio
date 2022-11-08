@@ -42,7 +42,7 @@ function sendEmail(){
         Subject : sub,
         Body : body
     }).then(
-        message => alert(message)
+        message => alert("Message Sent Successfully to Jami Saiteja")
     );
 }
 
