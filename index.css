@@ -41,6 +41,18 @@
     background-size: cover;
     opacity: 0.9;
 }
+
+.content{
+    background: transparent;
+    background-color: rgb(6, 6, 6);
+    opacity: 0.5;
+    padding:30px;
+    width:500px;
+    border-radius: 10px;
+    margin: auto;
+    /* height: 100vh; */
+}
+
 .Home-heading {
     color: white;
     font-size: 54px;
@@ -66,7 +78,8 @@
     font-family: "Roboto";
     font-weight:600;
     font-size:14px;
-    border:2px solid #ffffff;
+    border:2px solid #f9f6f6;
+    border-radius: 8px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -82,19 +95,19 @@
     }
 
     .Home-heading {
-        color: rgb(17, 16, 16);
+        color: rgb(243, 235, 235);
         font-size: 36px;
         font-weight: 600;
     }
     .Home-caption {
-        color: rgb(10, 10, 10);
+        color: rgb(254, 251, 251);
         font-style: italic;
         font-size: 18px;
         font-weight: 400;
     }
     
     .Home-designation {
-        color: #534e4e;
+        color: #f5f2f2;
         font-size: 18px;
         font-weight: 600;
         font-style: italic;
@@ -104,10 +117,15 @@
         font-family: "Roboto";
         font-weight:600;
         font-size:12px;
-        background-color: #393938;
-        border:none;
+        background-color: #0b0b0b;
+        /* border:none; */
+        color: rgb(252, 248, 248);
     }
     
+    .content{
+        width:250px;
+        padding: 20px;
+    }
 }
 
 /* --------------
@@ -142,8 +160,8 @@ aboutsection
     bottom: 0;
 }
 
-.description{
-    color: #979fa5;
+.description1{
+    color: #a0a7ac;
     font-family: "Roboto";
     font-size: 16px;
 }
@@ -519,17 +537,17 @@ footer
 
 
 .footer {
-    background-color: #001c32;
+    background-color: #212529;
 }
 
 .description{
-    color: #5a7184;
+    color: #f4f4f5;
     font-family: "Roboto";
     font-size: 14px;
     font-weight: 400;
 }
 
 .copy-icon {
-    color: #5a7184;
+    color: #f4f4f5;
     font-size: 22px;
 }

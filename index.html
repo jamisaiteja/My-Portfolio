@@ -44,8 +44,8 @@
             </div>
         </nav> 
 
-        <section class="Home-section d-flex flex-column justify-content-center text-md-dark text-lg-light pt-5 pb-5" id="homeSection">
-            <div class="text-center ">
+        <section class="Home-section d-flex flex-column justify-content-center pt-5 pb-5" id="homeSection">
+            <div class="text-center content pt-5 pb-5">
                 <p class="Home-caption mb-0 font-weight-bold"><span>Hello,I'm</span><br/><span class="Home-heading">Jami Sai Teja</span></p>
                 <p class="Home-designation mb-4">Front End Developer</p>
                 <a href="#aboutSection" class="aboutBtn mr-3 p-2 text-decoration-none text-light text-uppercase">About Me</a>
@@ -69,7 +69,7 @@
                             ABOUT ME
                         </h2>
                         <h3 class="about-section-para">I am Jami Saiteja, 23 Year old Front End Developer From Andhra Pradesh, India.</h3>
-                        <p class="description">
+                        <p class="description1">
                             I am interested in IT and everything in its orbit. I've recently developed an interest in web development,
                             such as creating websites and applications.I want to gain more experience in this field. 
                             I am looking for a company willing to offer me a placement among their developers.
@@ -389,21 +389,23 @@
                     <div class= "col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="100">
                         <div class="box d-flex flex-column  align-items-stretch">
                             <h2 class="mb-5">SEND MESSAGE</h2>
+                            
                             <form id="form" onsubmit="sendEmail(); reset(); return false;">
+                                <span id="span"></span>
                                 <div class="inputBox">
-                                    <input type="text" id="name" value="" required/>
+                                    <input type="text" name="name" id="name" value="" required/>
                                     <label for="name">Name</label>
                                 </div>
                                 <div class="inputBox">
-                                    <input type="email" id="email" value="" required />
+                                    <input type="email" name="email" id="email" value="" required />
                                     <label for="email">Email</label>
                                 </div>
                                 <div class="inputBox">
-                                    <input type="tel" id="phonenumber" value="" required />
+                                    <input type="tel" name="phonenumber" id="phonenumber" value="" required />
                                     <label for="phonenumber">Phone Number</label>
                                 </div>
                                 <div class="inputBox">
-                                    <textarea type="textarea" id="message" rows="4" cols="70" value="" required></textarea>
+                                    <textarea type="textarea" name="message" id="message" rows="4" cols="70" value="" required></textarea>
                                     <label for="message">Message</label>
                                 </div>
                                 <!-- <input type="submit" id="sub" value="Submit" class="text-center"/> -->
@@ -414,6 +416,7 @@
                 </div>
             </div>
         </section>
+
         <footer class="footer pt-2 pb-2">
             <div class="container">
                 <div class="row">
@@ -426,7 +429,8 @@
                 </div>
             </div>
         </footer>
-        <!-- our aos data -->
+
+        <!-- aos data -->
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
             AOS.init();
