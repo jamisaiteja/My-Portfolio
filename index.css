@@ -333,6 +333,19 @@ Resume
         width: 80%;
     }
 }
+
+.bar .react{
+    width: 60%;
+    animation: react 2s;
+}
+@keyframes react {
+    0%{
+        width: 0%;
+    }100%{
+        width: 70%;
+    }
+}
+
 .bar .sql{
     width: 80%;
     animation: sql 2s;
@@ -395,6 +408,15 @@ Portfolio
     border-radius: 16px;
 }
 
+.project-logo{
+    width:40px;
+    height:20px;
+}
+
+.project-logo-react{
+    width:30px;
+    height:24px;
+}
 
 /* ----------------------
 Contact
