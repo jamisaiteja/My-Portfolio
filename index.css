@@ -346,6 +346,42 @@ Resume
     }
 }
 
+.bar .node{
+    width: 70%;
+    animation: node 2s;
+}
+@keyframes node {
+    0%{
+        width: 0%;
+    }100%{
+        width: 70%;
+    }
+}
+
+.bar .express{
+    width: 70%;
+    animation: express 2s;
+}
+@keyframes express {
+    0%{
+        width: 0%;
+    }100%{
+        width: 70%;
+    }
+}
+
+.bar .mongo{
+    width: 70%;
+    animation: mongo 2s;
+}
+@keyframes mongo {
+    0%{
+        width: 0%;
+    }100%{
+        width: 70%;
+    }
+}
+
 .bar .sql{
     width: 80%;
     animation: sql 2s;
