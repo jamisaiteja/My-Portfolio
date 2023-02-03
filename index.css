@@ -362,6 +362,7 @@ Resume
     width: 70%;
     animation: express 2s;
 }
+
 @keyframes express {
     0%{
         width: 0%;
