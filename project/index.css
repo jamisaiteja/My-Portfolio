@@ -1,0 +1,657 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.logo{
+    width: 2rem;
+    height: 2rem;
+    transition: all linear 0.5s;
+}
+.span-logo{
+    font-family:italic;
+}
+
+
+#navItem1,#navItem2,#navItem3,#navItem4,#navItem5{
+    color: #f4f4f5;
+    font-family: "Roboto";
+    transition: all linear 0.5s;
+    margin-right: 10px;
+    text-decoration: none;
+    padding:6px;
+}
+
+#navItem1:hover,#navItem2:hover,#navItem3:hover,#navItem4:hover,#navItem5:hover{
+    color: #f4f4f5;
+    border-bottom : 3px solid #a6a0a0;
+}
+
+
+.active {
+    background-color: #88878a;
+    border-radius: 8px;
+}
+
+.Home-section {
+    background-image: url("./assests/backgroundHome.jpg");
+    height: 100vh;
+    background-size: cover;
+    opacity: 0.9;
+}
+
+.content{
+    background: transparent;
+    background-color: rgb(6, 6, 6);
+    opacity: 0.5;
+    padding:30px;
+    width:500px;
+    border-radius: 10px;
+    margin: auto;
+    /* height: 100vh; */
+}
+
+.Home-heading {
+    color: white;
+    font-size: 54px;
+    font-weight: 600;
+}
+.Home-caption {
+    color: white;
+    font-style: italic;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.Home-designation {
+    color: white;
+    font-size: 38px;
+    font-weight: 600;
+    font-style: italic;
+    margin-bottom: 15px;
+
+}
+
+.aboutBtn{
+    font-family: "Roboto";
+    font-weight:600;
+    font-size:14px;
+    border:2px solid #f9f6f6;
+    border-radius: 8px;
+}
+
+@media only screen and (max-width: 768px) {
+    #navItem1,#navItem2,#navItem3,#navItem4,#navItem5{
+        text-align: center;
+    }
+
+    .Home-section {
+        background-image: url("./assests/backgroundHome.jpg");
+        height: 80vh;
+        /* background-size: cover; */
+        opacity: 0.9;
+    }
+
+    .Home-heading {
+        color: rgb(243, 235, 235);
+        font-size: 32px;
+        font-weight: 600;
+    }
+    .Home-caption {
+        color: rgb(254, 251, 251);
+        font-style: italic;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    
+    .Home-designation {
+        color: #f5f2f2;
+        font-size: 14px;
+        font-weight: 600;
+        font-style: italic;
+    }
+    
+    .aboutBtn{
+        font-family: "Roboto";
+        font-weight:600;
+        font-size:12px;
+        background-color: #0b0b0b;
+        /* border:none; */
+        color: rgb(252, 248, 248);
+    }
+    
+    .content{
+        width:250px;
+        padding: 20px;
+    }
+}
+
+/* --------------
+aboutsection
+=--------------- */
+
+.about-section {
+    background-color: rgb(252, 248, 248);
+    width: 100%;
+}
+.about-section-img {
+    width: 270px;
+}
+
+.section-heading {
+    color: #141414;
+    font-family: "Roboto";
+    font-size: 28px;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+}
+
+.section-heading::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #3d3f40;
+    bottom: 0;
+}
+
+.description1{
+    color: #a0a7ac;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+.about-section-para {
+    color: #6e6f70;
+    font-family: "Roboto";
+    font-size: 24px;
+}
+
+.mx-2 {
+    margin-right: 0.5rem !important;
+    margin-left: 0.5rem !important;
+}
+
+.my-2 {
+    margin-top: 0.5rem !important;
+    margin-bottom: 0.5rem !important;
+}
+
+.btn-social {
+    height: 2.5rem;
+    width: 2.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border-radius: 100%;
+}
+
+
+/* -----------------------------------
+Resume 
+----------------------------------- */
+
+.resume-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #050d18;
+    width: 100%;
+}
+
+.resume-item,.skill_main{
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid #131314;
+    position: relative;
+}
+
+.resume-item h4 {
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #050d18;
+    margin-bottom: 10px;
+    margin-left:5px;
+}
+
+.resume-item h5 {
+    font-size: 16px;
+    background: #babbbb;
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.resume-item ul {
+    padding-left: 20px;
+}
+
+.resume-item ul li {
+    padding-bottom: 10px;
+    list-style-type: none;
+}
+
+/* .resume-item:last-child {
+    padding-bottom: 0;
+} */
+
+.resume-item::before, .skill_main:before{
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: #fff;
+    border: 2px solid #111112;
+}
+
+.skill_bar{
+    margin-top: 5px;
+    padding: 10px;
+}
+
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  0 10px;
+    font-weight: 600;
+}
+
+.bar{
+    width: 100%;
+    height: 10px;
+    background-color: rgba(0, 0, 0, 0.144);
+    border-radius: 25px;
+    margin-top: 5px;
+    position: relative;
+}
+
+.bar span{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background-color: #4c4a49;
+    border-radius: 25px;
+}
+.bar .html{
+    width: 90%;
+    animation: html 2s;
+}
+@keyframes html {
+    0%{
+        width: 0%;
+    }100%{
+        width: 90%;
+    }
+}
+
+.bar .css{
+    width: 85%;
+    animation: css 2s;
+}
+@keyframes css {
+    0%{
+        width: 0%;
+    }100%{
+        width: 85%;
+    }
+}
+.bar .bootstrap{
+    width: 80%;
+    animation: bootstrap 2s;
+}
+@keyframes bootstrap {
+    0%{
+        width: 0%;
+    }100%{
+        width: 80%;
+    }
+}
+.bar .js{
+    width: 80%;
+    animation: js 2s;
+}
+@keyframes js {
+    0%{
+        width: 0%;
+    }100%{
+        width: 80%;
+    }
+}
+
+.bar .react{
+    width: 60%;
+    animation: react 2s;
+}
+@keyframes react {
+    0%{
+        width: 0%;
+    }100%{
+        width: 70%;
+    }
+}
+
+.bar .node{
+    width: 70%;
+    animation: node 2s;
+}
+@keyframes node {
+    0%{
+        width: 0%;
+    }100%{
+        width: 70%;
+    }
+}
+
+.bar .express{
+    width: 70%;
+    animation: express 2s;
+}
+
+@keyframes express {
+    0%{
+        width: 0%;
+    }100%{
+        width: 70%;
+    }
+}
+
+.bar .mongo{
+    width: 70%;
+    animation: mongo 2s;
+}
+@keyframes mongo {
+    0%{
+        width: 0%;
+    }100%{
+        width: 70%;
+    }
+}
+
+.bar .sql{
+    width: 80%;
+    animation: sql 2s;
+}
+@keyframes sql {
+    0%{
+        width: 0%;
+    }100%{
+        width: 75%;
+    }
+}
+.bar .python{
+    width: 70%;
+    animation: python 2s;
+}
+@keyframes python {
+    0%{
+        width: 0%;
+    }100%{
+        width: 70%;
+    }
+}
+
+/* ---------------------
+Portfolio
+--------------------- */
+
+.project-image {
+    border-radius: 16px;
+    /* max-width:250px;
+    max-height:120px; */
+}
+
+.project-title {
+    color: #323f4b;
+    font-family: "Roboto";
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 24px;
+}
+
+.project-title-wiki{
+    color: #323f4b;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 24px;
+}
+
+.project-link:link ,.project-link:visited{
+    color: #fff;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #262625b9;
+    padding:8px;
+    border-radius:5px;
+}
+
+.Technologies-used{
+    font-size: 16px;
+    color: #323f4b;
+    font-family: "Roboto";
+    font-weight: 600;
+}
+
+.project-link:hover{
+    text-decoration: none;
+    color: #000;
+}
+.project-section {
+    border-radius: 16px;
+}
+
+.project-logo{
+    width:40px;
+    height:20px;
+}
+
+.project-logo-react{
+    width:28px;
+    height:24px;
+}
+
+/* ----------------------
+Contact
+---------------------- */
+
+.contact-section{
+    background-color: rgb(239, 235, 235);
+}
+
+.contact-section .infor{
+    width:100%;
+    padding: 50px;
+    background-color: rgba(251, 251, 251, 0.8);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(110, 108, 108, 0.5);
+    border-radius: 10px;
+}
+
+.contact-section .infor i {
+    font-size: 20px;
+    color: #000000;
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: #a9acae;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-section .infor h4 {
+    padding: 0 0 0 60px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #050d18;
+}
+
+.contact-section .infor p {
+    padding: 0 0 10px 60px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #173b6c;
+}
+
+.contact-section .infor .email p {
+    padding-top: 5px;
+}
+
+.contact-section .infor .email:hover i,
+.contact-section .infor .address:hover i,
+.contact-section .infor .phone:hover i {
+    background-color: #000000;
+    color: #a9acae;
+}
+
+.description-contact{
+    color: #000;
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.box{
+    width:100%;
+    padding: 40px;
+    background-color: rgba(251, 251, 251, 0.8);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(120, 118, 118, 0.5);
+    border-radius: 10px;
+}
+
+
+.box h2{
+    margin: 0 0 10px;
+    padding: 0;
+    color: #000;
+    text-align: center;
+    font-weight: 700;
+}
+
+.box .inputBox{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+::placeholder{
+    font-size: 12px;
+    font-weight: 400;
+}
+.box .inputBox input,.box .inputBox textarea{
+    width: 100%;
+    padding:8px 5px;
+    font-size: 14px;
+    color:#000;
+    margin-top: 10px;
+    margin-bottom: 4px;
+    /* border: none; */
+    border: 1px solid #000;
+    border-radius: 5px;
+    outline: none;
+    background-color:transparent;
+    font-weight: 600;
+}
+
+.box .inputBox label{
+    position: absolute;
+    top: 0px;
+    left:0;
+    padding:10px 0;
+    font-size: 16px;
+    color:#000;
+    pointer-events: none;
+    transition: 0.5s;
+    font-weight: 600;
+}
+.box .inputBox input:valid ~ label, 
+.box .inputBox textarea:valid ~ label {
+    top: -28px;
+    left:0;
+    font-size: 16px;
+    color:#595656;
+    font-weight: 600;
+}
+
+#sub{
+    border: none;
+    outline: none;
+    color:#000;
+    background-color: #a9acae;
+    border-radius: 16px;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-weight: bold;
+    /* margin: 15px auto; */
+    display: block;
+    width: 100%;
+    font-size: 18px;
+}
+
+#sub:hover{
+    background-color: #000000;
+    color: #a9acae;
+}
+
+
+.inputBox small{
+    visibility: hidden;
+    margin: 4px 0;
+}
+
+.inputBox.success input,.inputBox.success textarea{
+    border-color: #2ecc71;
+}
+
+.inputBox.error input, .inputBox.error textarea{
+    border-color: #e74c3c;
+}
+
+.inputBox.error small{
+    visibility: visible;
+    color: #e74c3c;
+}
+
+/* ------------
+footer
+------------ */
+
+
+.footer {
+    background-color: #212529;
+}
+
+.description{
+    color: #f4f4f5;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.footer-group{
+    padding:0 10px;
+}
+.copy-icon {
+    color: #f4f4f5;
+    font-size: 22px;
+}
